@@ -3,6 +3,7 @@ import { useState } from "react"
 import { CardCollapsed } from "./components/card-collapsed";
 import { CardExtended } from "./components/card-extended";
 import { ChatFill, CheckCircleFill, PatchCheckFill, StopwatchFill, TagFill } from "react-bootstrap-icons";
+import { Credits } from "./components/credits";
 
 export const activities = [
   {
@@ -42,6 +43,7 @@ function App() {
 
   return (
     <section className="w-full h-dvh flex justify-center items-center">
+      <Credits />
       <AnimatePresence initial={false}>
         {
           !isExtended ?
